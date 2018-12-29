@@ -1,0 +1,47 @@
+{
+  "name"        : "varunsridharan/wp-dependencies",
+  "version"     : "1.0",
+  "description" : "Provides Function To Check if a plugin is active/inactive & function to compare versions.",
+  "type"        : "library",
+  "support"     : {
+	"email"  : "varunsridharan23@gmail.com",
+	"issues" : "https://github.com/varunsridharan/wp-dependencies/issues",
+	"source" : "https://github.com/varunsridharan/wp-dependencies",
+	"wiki"   : "https://github.com/varunsridharan/wp-dependencies/wiki/"
+  },
+  "homepage"    : "https://github.com/varunsridharan/wp-dependencies/",
+  "license"     : "GPL-3.0-or-later",
+  "keywords"    : [
+	"wordpress",
+	"wordpress-plugin",
+	"wordpress-theme",
+	"wordpress-library",
+	"wordpress-plugin-library",
+	"wordpress-theme-library",
+	"wordpress-php-library",
+	"wordpress-theme-development",
+	"wordpress-plugin-development",
+	"wordpress-plugins",
+	"wordpress-development",
+	"wp-plugin",
+	"wp-theme",
+	"wp-library",
+	"wp-addon",
+	"vsp-libs",
+	"wp",
+	"dependencies",
+	"wp-dependencies",
+	"wordpress-dependencies"
+  ],
+  "autoload"    : {
+	"files" : [ "./src/dependencies.php" ]
+  },
+  "authors"     : [
+	{
+	  "name"     : "Varun Sridharan",
+	  "email"    : "varunsridharan23@gmail.com",
+	  "homepage" : "http://varunsridharan.in",
+	  "role"     : "Developer"
+	}
+  ]
+}
