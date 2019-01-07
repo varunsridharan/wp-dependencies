@@ -113,11 +113,27 @@ class Dependencies {
 	 * @return string|bool
 	 */
 	public static function version( $plugin_file ) {
-		$data = self::plugin_data( $plugin_file, true, false );
-		if ( isset( $data['Version'] ) ) {
-			return $data['Version'];
+		$return = false;
+		switch ( strtolower( $plugin_file ) ) {
+			case 'wordpress':
+				global $wp_version;
+				$return = $wp_version;
+				break;
+			case 'php':
+				$return = PHP_VERSION;
+				break;
+			case 'mysql':
+				global $wpdb;
+				$return = $wpdb->db_version();
+				break;
+			default:
+				$data = self::plugin_data( $plugin_file, true, false );
+				if ( isset( $data['Version'] ) ) {
+					$return = $data['Version'];
+				}
+				break;
 		}
-		return false;
+		return $return;
 	}
 
 	/**

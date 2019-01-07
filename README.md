@@ -134,7 +134,17 @@ if( true === $wc_version ){
 }
 ```
 
+### Software Versions
+```php
+$is_wp_5_0 = is_version_gte('wordpress','5.0');
+$is_php_5_0 = is_version_gte('php','5.0');
+$is_mysql_5_0 = is_version_gte('mysql','5.0');
+```
+
 ## Change Log
+### 1.1 - 07-01-2019
+* Added Option To Get `WordPress` , `PHP` & `MySql` Version.
+
 ### 1.0 - 29/12/2018
 * First Release
 
