@@ -1,6 +1,14 @@
 # WP Dependencies
 Provides Function To Check if a plugin is active/inactive & function to compare versions.
 
+[![Latest Stable Version](https://poser.pugx.org/varunsridharan/wp-dependencies/version)](https://packagist.org/packages/varunsridharan/wp-dependencies)
+[![Latest Unstable Version](https://poser.pugx.org/varunsridharan/wp-dependencies/v/unstable)](https://packagist.org/packages/varunsridharan/wp-dependencies)
+[![Total Downloads](https://poser.pugx.org/varunsridharan/wp-dependencies/downloads)](https://packagist.org/packages/varunsridharan/wp-dependencies)
+[![Latest Unstable Version](https://poser.pugx.org/varunsridharan/wp-dependencies/v/unstable)](//packagist.org/packages/varunsridharan/wp-dependencies)
+[![WP](https://img.shields.io/badge/WordPress-Standar-1abc9c.svg)](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/)
+[![License](https://poser.pugx.org/varunsridharan/wp-dependencies/license)](https://packagist.org/packages/varunsridharan/wp-dependencies)
+[![composer.lock available](https://poser.pugx.org/varunsridharan/wp-dependencies/composerlock)](https://packagist.org/packages/varunsridharan/wp-dependencies)
+
 ## Installation
 The preferred way to install this extension is through [Composer](http://getcomposer.org/download/).
 
