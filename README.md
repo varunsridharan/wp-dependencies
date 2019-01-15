@@ -150,6 +150,10 @@ $is_mysql_5_0 = is_version_gte('mysql','5.0');
 ```
 
 ## Change Log
+### 1.2 - 15-01-2019
+* Fixed Composer Issue
+* Updated README.md
+
 ### 1.1 - 07-01-2019
 * Added Option To Get `WordPress` , `PHP` & `MySql` Version.
 
