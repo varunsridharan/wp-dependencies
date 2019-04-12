@@ -4,7 +4,7 @@
  * Provides Function To Check if a plugin is active/inactive & function to compare versions.
  *
  * @author Varun Sridharan <varunsridharan23@gmail.com>
- * @version 1.0
+ * @version 1.4
  * @since 1.0
  * @link https://github.com/varunsridharan/wp-dependencies
  * @copyright 2018 Varun Sridharan
@@ -101,6 +101,7 @@ class Dependencies {
 	 * @return array
 	 */
 	public static function plugin_data( $file, $markup = true, $translate = true ) {
+		self::load_file();
 		return get_plugin_data( WP_PLUGIN_DIR . '/' . $file, $markup, $translate );
 	}
 
