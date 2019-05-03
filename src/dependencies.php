@@ -39,6 +39,20 @@ class Dependencies {
 	}
 
 	/**
+	 * Checks if given plugin is installed.
+	 *
+	 * @param $file
+	 *
+	 * @static
+	 * @return bool
+	 */
+	public static function is_installed( $file ) {
+		self::load_file();
+		$plugins = get_plugins();
+		return ( isset( $plugins[ $file ] ) ) ? $plugins[ $file ] : false;
+	}
+
+	/**
 	 * Checks If Plugin is Active.
 	 *
 	 * @param $file
@@ -102,6 +116,10 @@ class Dependencies {
 	 */
 	public static function plugin_data( $file, $markup = true, $translate = true ) {
 		self::load_file();
+		$plugins = get_plugins();
+		if ( ! empty( $plugins ) && isset( $plugins[ $file ] ) ) {
+			return $plugins[ $file ];
+		}
 		return get_plugin_data( WP_PLUGIN_DIR . '/' . $file, $markup, $translate );
 	}
 
