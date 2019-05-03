@@ -33,7 +33,7 @@ if ( ! function_exists( 'wp_is_plugin_installed' ) ) {
 	 * @return bool
 	 * @uses \Varunsridharan\WordPress\Dependencies::is_active()
 	 */
-	function wp_is_plugin_active( $plugin_file ) {
+	function wp_is_plugin_installed( $plugin_file ) {
 		return \Varunsridharan\WordPress\Dependencies::is_installed( $plugin_file );
 	}
 }
