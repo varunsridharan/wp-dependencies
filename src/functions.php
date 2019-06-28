@@ -9,6 +9,8 @@
  * @license GPLV3 Or Greater (https://www.gnu.org/licenses/gpl-3.0.txt)
  */
 
+use Varunsridharan\WordPress\Dependencies;
+
 if ( ! function_exists( 'wp_is_plugin_active' ) ) {
 	/**
 	 * Checks if Plugin is active.
@@ -16,11 +18,9 @@ if ( ! function_exists( 'wp_is_plugin_active' ) ) {
 	 * @param $plugin_file
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::is_active()
-	 *
 	 */
 	function wp_is_plugin_active( $plugin_file ) {
-		return \Varunsridharan\WordPress\Dependencies::is_active( $plugin_file );
+		return Dependencies::is_active( $plugin_file );
 	}
 }
 
@@ -31,10 +31,9 @@ if ( ! function_exists( 'wp_is_plugin_installed' ) ) {
 	 * @param $plugin_file
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::is_active()
 	 */
 	function wp_is_plugin_installed( $plugin_file ) {
-		return \Varunsridharan\WordPress\Dependencies::is_installed( $plugin_file );
+		return Dependencies::is_installed( $plugin_file );
 	}
 }
 
@@ -45,11 +44,9 @@ if ( ! function_exists( 'wp_is_plugin_network_active' ) ) {
 	 * @param $plugin_file
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::is_network_active()
-	 *
 	 */
 	function wp_is_plugin_network_active( $plugin_file ) {
-		return \Varunsridharan\WordPress\Dependencies::is_network_active( $plugin_file );
+		return Dependencies::is_network_active( $plugin_file );
 	}
 }
 
@@ -60,11 +57,9 @@ if ( ! function_exists( 'wp_is_site_plugin_active' ) ) {
 	 * @param $plugin_file
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::is_site_active()
-	 *
 	 */
 	function wp_is_site_plugin_active( $plugin_file ) {
-		return \Varunsridharan\WordPress\Dependencies::is_site_active( $plugin_file );
+		return Dependencies::is_site_active( $plugin_file );
 	}
 }
 
@@ -75,11 +70,9 @@ if ( ! function_exists( 'wp_is_plugin_inactive' ) ) {
 	 * @param $plugin_file
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::is_inactive()
-	 *
 	 */
 	function wp_is_plugin_inactive( $plugin_file ) {
-		return \Varunsridharan\WordPress\Dependencies::is_inactive( $plugin_file );
+		return Dependencies::is_inactive( $plugin_file );
 	}
 }
 
@@ -90,11 +83,9 @@ if ( ! function_exists( 'plugin_version' ) ) {
 	 * @param $plugin
 	 *
 	 * @return string|bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version()
-	 *
 	 */
 	function plugin_version( $plugin ) {
-		return \Varunsridharan\WordPress\Dependencies::version( $plugin );
+		return Dependencies::version( $plugin );
 	}
 }
 
@@ -106,11 +97,9 @@ if ( ! function_exists( 'plugin_version_gt' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_gt()
-	 *
 	 */
 	function plugin_version_gt( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_gt( $plugin, $compare_version );
+		return Dependencies::version_gt( $plugin, $compare_version );
 	}
 }
 
@@ -122,11 +111,9 @@ if ( ! function_exists( 'plugin_version_gte' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_gte()
-	 *
 	 */
 	function plugin_version_gte( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_gte( $plugin, $compare_version );
+		return Dependencies::version_gte( $plugin, $compare_version );
 	}
 }
 
@@ -138,11 +125,9 @@ if ( ! function_exists( 'plugin_version_lte' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_lte()
-	 *
 	 */
 	function plugin_version_lte( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_lte( $plugin, $compare_version );
+		return Dependencies::version_lte( $plugin, $compare_version );
 	}
 }
 
@@ -154,11 +139,9 @@ if ( ! function_exists( 'plugin_version_lt' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_lt()
-	 *
 	 */
 	function plugin_version_lt( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_lt( $plugin, $compare_version );
+		return Dependencies::version_lt( $plugin, $compare_version );
 	}
 }
 
@@ -170,11 +153,9 @@ if ( ! function_exists( 'is_version_gt' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_gt()
-	 *
 	 */
 	function is_version_gt( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_gt( $plugin, $compare_version );
+		return Dependencies::version_gt( $plugin, $compare_version );
 	}
 }
 
@@ -186,11 +167,9 @@ if ( ! function_exists( 'is_version_gte' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_gte()
-	 *
 	 */
 	function is_version_gte( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_gte( $plugin, $compare_version );
+		return Dependencies::version_gte( $plugin, $compare_version );
 	}
 }
 
@@ -202,11 +181,9 @@ if ( ! function_exists( 'is_version_lte' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_lte()
-	 *
 	 */
 	function is_version_lte( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_lte( $plugin, $compare_version );
+		return Dependencies::version_lte( $plugin, $compare_version );
 	}
 }
 
@@ -218,10 +195,8 @@ if ( ! function_exists( 'is_version_lt' ) ) {
 	 * @param $compare_version
 	 *
 	 * @return bool
-	 * @uses \Varunsridharan\WordPress\Dependencies::version_lt()
-	 *
 	 */
 	function is_version_lt( $plugin, $compare_version ) {
-		return \Varunsridharan\WordPress\Dependencies::version_lt( $plugin, $compare_version );
+		return Dependencies::version_lt( $plugin, $compare_version );
 	}
 }

@@ -133,27 +133,23 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Dependencies' ) ) {
 		 * @return string|bool
 		 */
 		public static function version( $plugin_file ) {
-			$return = false;
 			switch ( strtolower( $plugin_file ) ) {
 				case 'wordpress':
 					global $wp_version;
-					$return = $wp_version;
+					return $wp_version;
 					break;
 				case 'php':
-					$return = PHP_VERSION;
+					return PHP_VERSION;
 					break;
 				case 'mysql':
 					global $wpdb;
-					$return = $wpdb->db_version();
+					return $wpdb->db_version();
 					break;
 				default:
 					$data = self::plugin_data( $plugin_file, true, false );
-					if ( isset( $data['Version'] ) ) {
-						$return = $data['Version'];
-					}
+					return ( isset( $data['Version'] ) ) ? $data['Version'] : false;
 					break;
 			}
-			return $return;
 		}
 
 		/**
@@ -208,5 +204,4 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Dependencies' ) ) {
 			return ( false !== self::version( $plugin_file ) && version_compare( self::version( $plugin_file ), $version, '<' ) );
 		}
 	}
-
 }
