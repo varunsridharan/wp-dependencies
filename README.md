@@ -149,17 +149,9 @@ $is_php_5_0 = is_version_gte('php','5.0');
 $is_mysql_5_0 = is_version_gte('mysql','5.0');
 ```
 
-## Change Log
-### 1.2 - 15-01-2019
-* Fixed Composer Issue
-* Updated README.md
-
-### 1.1 - 07-01-2019
-* Added Option To Get `WordPress` , `PHP` & `MySql` Version.
-
-### 1.0 - 29/12/2018
-* First Release
 
 ---
-## Sponsored By
-[![DigitalOcean](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/DO_Logo_Horizontal_Blue.png)](https://s.svarun.in/Ef)
+
+<!-- START common-footer.mustache  -->
+
+<!-- END common-footer.mustache  -->

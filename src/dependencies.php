@@ -13,10 +13,6 @@
 
 namespace Varunsridharan\WordPress;
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die;
-}
-
 if ( ! class_exists( '\Varunsridharan\WordPress\Dependencies' ) ) {
 	require_once __DIR__ . '/functions.php';
 
